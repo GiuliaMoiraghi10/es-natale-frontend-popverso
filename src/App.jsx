@@ -1,11 +1,15 @@
 import './App.css'
 
+import Header from './components/Header'
+import MainList from './components/MainList'
+
 function App() {
 
   return (
     <>
       <div>
-        <h1>PopVerso</h1>
+        <Header />
+        <MainList />
       </div>
     </>
   )
