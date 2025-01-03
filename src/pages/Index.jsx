@@ -1,10 +1,12 @@
-import Header from "../components/Header"
 import MainList from "../components/MainList"
 
 export default function Index() {
     return (
         <main>
-            <MainList />
+            <div className="container">
+                <h2>Personaggi</h2>
+                <MainList />
+            </div>
         </main>
     )
 }
