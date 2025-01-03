@@ -1,16 +1,23 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Header from './components/Header'
-import MainList from './components/MainList'
+import Index from './pages/Index'
+import Show from './pages/Show'
+
+import DefaultLayout from './layouts/DefaultLayout'
 
 function App() {
 
   return (
     <>
-      <div>
-        <Header />
-        <MainList />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<DefaultLayout />}>
+            <Route index element={<Index />}></Route>
+            <Route path=":id" element={<Show />}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

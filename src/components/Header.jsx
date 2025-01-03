@@ -1,5 +1,7 @@
 export default function Header() {
     return (
-        <h1>Header</h1>
+        <header className="container-fluid">
+            <h1>PopVerso</h1>
+        </header>
     )
 }
